@@ -84,7 +84,7 @@ const Navbar = () => {
                                     key={item.title}
                                     href={item.url}
                                     className={cn(
-                                        "flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-xl transition-colors",
+                                        "flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md transition-colors",
                                         isActive
                                             ? "bg-[#00baff] text-white"
                                             : "text-muted-foreground hover:text-foreground hover:bg-muted"
@@ -102,7 +102,7 @@ const Navbar = () => {
                         <Button
                             variant="ghost"
                             size="icon"
-                            className="rounded-xl h-10 w-10 transition-all active:scale-95"
+                            className="rounded-md h-10 w-10 transition-all active:scale-95"
                             onClick={toggleTheme}
                         >
                             {mounted && (isDark ? <Sun className="size-5" /> : <Moon className="size-5" />)}
@@ -112,7 +112,7 @@ const Navbar = () => {
 
                             <Button
                                 asChild
-                                className="rounded-xl px-8 h-11 bg-[#00baff] hover:bg-[#00a3e0] text-white font-bold transition-all active:scale-95 shadow-sm"
+                                className="rounded-md px-8 h-11 bg-[#00baff] hover:bg-[#00a3e0] text-white font-bold transition-all active:scale-95 shadow-sm"
                             >
                                 <Link href="/login" className="flex items-center gap-2">
                                     Sign In <Sparkles className="size-4" />
@@ -124,7 +124,7 @@ const Navbar = () => {
                         <div className="lg:hidden">
                             <Sheet open={open} onOpenChange={setOpen}>
                                 <SheetTrigger asChild>
-                                    <Button variant="outline" size="icon" className="rounded-xl h-10 w-10">
+                                    <Button variant="outline" size="icon" className="rounded-md h-10 w-10">
                                         <Menu className="size-5" />
                                     </Button>
                                 </SheetTrigger>
@@ -149,7 +149,7 @@ const Navbar = () => {
                                                     href={item.url}
                                                     onClick={() => setOpen(false)}
                                                     className={cn(
-                                                        "flex items-center gap-3 px-4 py-3 text-base font-semibold rounded-xl transition-all",
+                                                        "flex items-center gap-3 px-4 py-3 text-base font-semibold rounded-md transition-all",
                                                         isActive
                                                             ? "bg-[#00baff]/10 text-[#00baff]"
                                                             : "text-muted-foreground hover:bg-muted"
@@ -164,7 +164,7 @@ const Navbar = () => {
 
                                     <div className="p-4 border-t space-y-2">
 
-                                        <Button asChild className="w-full h-12 rounded-xl bg-[#00baff] text-white font-bold" onClick={() => setOpen(false)}>
+                                        <Button asChild className="w-full h-12 rounded-md bg-[#00baff] text-white font-bold" onClick={() => setOpen(false)}>
                                             <Link href="/login">Sign In</Link>
                                         </Button>
                                     </div>
