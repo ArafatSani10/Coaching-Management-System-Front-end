@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 Coaching Management System (Pro-Suite)
 
-## Getting Started
+A high-performance, enterprise-grade Coaching Management System designed for speed, scalability, and seamless user experience. This platform streamlines the interaction between students, instructors, and administrators.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack & Tools
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project is built using the most modern and efficient technologies in the web ecosystem:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **Front-End**
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router & Turbopack)
+- **Language:** [TypeScript](https://www.typescriptlang.org/) (Strictly Typed for maximum security)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) (Utility-first CSS)
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com/) (Radix UI based)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Back-End (API Layer)**
+- **Runtime:** Node.js with Express.js
+- **Database:** PostgreSQL
+- **ORM:** [Prisma](https://www.prisma.io/)
+- **Package Manager:** [pnpm](https://pnpm.io/) (Fast & Disk-efficient)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🏗️ Key Architectural Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🚀 **Ultra-Fast Performance**
+- **Server Components:** Leverages Next.js Server Components to reduce client-side JavaScript.
+- **Streaming & Suspense:** Implements granular loading states to ensure the UI feels instant.
+- **Skeleton Loading:** Custom-designed shadcn Skeletons for a premium "perceived speed" experience.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🛡️ **Scalable Folder Structure**
+- **Route Groups:** Logical separation between `(client)`, `(dashboard)`, and `(auth)`.
+- **Service Layer:** All API logic is abstracted into a dedicated `services/` folder for clean code.
+- **Centralized Types:** Type-safe development with a global `types/` directory.
 
-## Deploy on Vercel
+### 🎨 **Modern UI/UX**
+- **Role-Based Layouts:** Distinct UI experiences for Admin and Students.
+- **Dark Mode Ready:** Fully compatible with light and dark themes.
+- **Responsive Design:** Optimized for mobile, tablet, and desktop screens.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📂 Core Directory Preview
+
+```text
+src/
+├── app/                  # Next.js App Router (Grouped Routes)
+├── components/           # Atomic UI & Shared Modules
+├── services/             # API Fetching & Business Logic
+├── types/                # Secure TypeScript Definitions
+├── hooks/                # Reusable Custom React Hooks
+└── lib/                  # Utility functions & Configuration
